@@ -1,0 +1,867 @@
+﻿@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.ttf?1qgzcs') format('truetype'), url('fonts/icomoon.woff?1qgzcs') format('woff'),;
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu_gl:before {
+    content: "\e973";
+}
+
+.icon-cxzk:before {
+    content: "\e95d";
+}
+
+.icon-cxsq:before {
+    content: "\e972";
+}
+
+.icon-duihao:before {
+    content: "\e966";
+}
+
+.icon-list_jh:before {
+    content: "\e96b";
+}
+
+.icon-list_jiah:before {
+    content: "\e96c";
+}
+
+.icon-pichuli:before {
+    content: "\e96d";
+}
+
+.icon-zxhua:before {
+    content: "\e96e";
+}
+
+.icon-zdhua:before {
+    content: "\e96f";
+}
+
+.icon-jies:before {
+    content: "\e970";
+}
+
+.icon-suo:before {
+    content: "\e971";
+}
+
+.icon-baocun:before {
+    content: "\e965";
+}
+
+.icon-sjt:before {
+    content: "\e960";
+    margin-left: -2px;
+}
+
+.icon-xsq:before {
+    content: "\e961";
+}
+
+.icon-ssq:before {
+    content: "\e962";
+}
+
+.icon-fjcdjh:before {
+    content: "\e963";
+}
+
+.icon-zsjjh:before {
+    content: "\e964";
+}
+
+.icon-czdjt:before {
+    content: "\e95d";
+}
+
+.icon-cydjt:before {
+    content: "\e95e";
+}
+
+.icon-cysjt:before {
+    content: "\e95f";
+}
+
+.icon-caidan:before {
+    content: "\e93a";
+}
+
+.icon-caidanjiahao:before {
+    content: "\e95c";
+}
+
+.icon-bm:before {
+    content: "\e967";
+}
+
+.icon-ks:before {
+    content: "\e968";
+}
+
+.icon-qd:before {
+    content: "\e969";
+}
+
+.icon-dy:before {
+    content: "\e96a";
+}
+
+.icon-iknow:before {
+    content: "\e917";
+}
+
+.icon-tb:before {
+    content: "\e900";
+}
+
+.icon-icon60b:before {
+    content: "\e62a";
+}
+
+.icon-icon26b:before {
+    content: "\e68e";
+}
+
+.icon-sq:before {
+    content: "\e123";
+}
+
+.icon-zk:before {
+    content: "\e124";
+}
+
+.icon-icon14b:before {
+    content: "\e6cc";
+}
+
+.icon-icon4b {
+    line-height: 21px;
+}
+
+.icon-icon4b:before {
+    color: #fff;
+    font-size: 20px;
+    content: "\e6d5";
+}
+
+.icon-icon12b:before {
+    content: "\e6d7";
+}
+
+.icon-dgzy:before {
+    content: "\e904";
+}
+
+.icon-pljy:before {
+    content: "\e905";
+}
+
+.icon-plzy:before {
+    content: "\e908";
+}
+
+.icon-sbsb:before {
+    content: "\e909";
+}
+
+.icon-xzfa:before {
+    content: "\e91c";
+}
+
+.icon-zlbf:before {
+    content: "\e92d";
+}
+
+.icon-deshbord:before {
+    content: "\e827";
+}
+
+.icon-user:before {
+    content: "\e801";
+}
+
+.icon-users:before {
+    content: "\e802";
+}
+
+.icon-yichang:before {
+    content: "\e90a";
+}
+
+.icon-7:before {
+    content: "\e910";
+}
+
+.icon-21:before {
+    content: "\e924";
+}
+
+.icon-22:before {
+    content: "\e925";
+}
+
+.icon-shou1:before {
+    content: "\e935";
+}
+
+.icon-shou2:before {
+    content: "\e936";
+}
+
+.icon-nothing:before {
+    content: "\e934";
+}
+
+.icon-19:before {
+    content: "\e928";
+}
+
+.icon-23:before {
+    content: "\e930";
+}
+
+.icon-dagou:before {
+    content: "\e69b";
+}
+
+.icon-close:before {
+    content: "\e6f2";
+}
+
+.icon-jia:before {
+    content: "\e628";
+}
+
+.icon-right2:before {
+    content: "\e6aa";
+}
+
+.icon-down2:before {
+    content: "\e6ab";
+}
+
+.icon-icon134:before {
+    content: "\e901";
+}
+
+.icon-richeng:before {
+    content: "\e902";
+}
+
+.icon-crmb:before {
+    content: "\e903";
+}
+
+.icon-icon124d:before {
+    content: "\e906";
+}
+
+.icon-icon139:before {
+    content: "\e907";
+}
+
+.icon-uniE634:before {
+    content: "\e90b";
+}
+
+.icon-wh:before {
+    content: "\e90c";
+}
+
+.icon-yh:before {
+    content: "\e90d";
+}
+
+.icon-soa:before {
+    content: "\e90e";
+}
+
+.icon-rencaiku:before {
+    content: "\e90f";
+}
+
+.icon-shebao:before {
+    content: "\e911";
+}
+
+.icon-xiaoxi:before {
+    content: "\e912";
+}
+
+.icon-icon52b:before {
+    content: "\e913";
+}
+
+.icon-tuichu:before {
+    content: "\e914";
+}
+
+.icon-icon2b:before {
+    content: "\e6d9";
+}
+
+.icon-glzx:before {
+    content: "\e915";
+}
+
+.icon-apps {
+    line-height: 18px;
+}
+
+.icon-apps:before {
+    color: #fff;
+    content: "\e916";
+    font-size: 16px;
+    margin-left: 1px;
+}
+
+.icon-icon122b:before {
+    content: "\e91d";
+}
+
+.icon-icon123b:before {
+    content: "\e91e";
+}
+
+.icon-icon115:before {
+    content: "\e647";
+}
+
+.icon-icon110:before {
+    content: "\e633";
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+.icon-uniE932:before {
+    color: #fff;
+    content: "\e932";
+}
+
+.icon-uniE933:before {
+    content: "\e933";
+}
+
+.icon-uniE934:before {
+    content: "\e937";
+}
+
+.icon-uniE936:before {
+    content: "\e938";
+}
+
+.icon-uniE937:before {
+    content: "\e939";
+}
+
+.icon-uniE915:before {
+    content: "\e918";
+}
+
+.icon-uniE916:before {
+    content: "\e919";
+}
+
+.icon-uniE917:before {
+    content: "\e91a";
+}
+
+.icon-uniE919:before {
+    content: "\e91b";
+}
+
+.icon-uniE91A:before {
+    content: "\e91f";
+}
+
+.icon-uniE91B:before {
+    content: "\e920";
+}
+
+.icon-uniE91C:before {
+    content: "\e921";
+}
+
+.icon-uniE91D:before {
+    content: "\e922";
+}
+
+.icon-uniE91E:before {
+    content: "\e923";
+    margin-left: -2px;
+}
+
+.icon-uniE91F:before {
+    content: "\e926";
+    margin-left: -2px;
+}
+
+.icon-uniE920:before {
+    content: "\e927";
+    margin-right: 7px;
+}
+
+.icon-uniE921:before {
+    content: "\e929";
+    margin-right: 7px;
+}
+
+.icon-uniE922:before {
+    content: "\e92a";
+    margin-right: 7px;
+}
+
+.icon-uniE923:before {
+    content: "\e92b";
+    margin-right: 7px;
+}
+
+.icon-uniE924:before {
+    content: "\e92c";
+    margin-right: 7px;
+}
+
+.icon-uniE925:before {
+    content: "\e92e";
+    margin-right: 7px;
+}
+
+.icon-uniE926:before {
+    content: "\e92f";
+    margin-right: 7px;
+}
+
+.icon-uniE927:before {
+    content: "\e93b";
+    margin-right: 7px;
+}
+
+.icon-uniE928:before {
+    content: "\e93c";
+    margin-right: 7px;
+}
+
+.icon-uniE929:before {
+    content: "\e93d";
+    margin-right: 7px;
+}
+
+.icon-uniE92A:before {
+    content: "\e93e";
+    margin-right: 7px;
+}
+
+.icon-uniE92B:before {
+    content: "\e93f";
+    margin-right: 7px;
+}
+
+.icon-uniE92C:before {
+    content: "\e940";
+    margin-right: 7px;
+}
+
+.icon-uniE92D:before {
+    content: "\e941";
+    margin-right: 7px;
+}
+
+.icon-uniE92E:before {
+    content: "\e942";
+    margin-right: 7px;
+}
+
+.icon-uniE92F:before {
+    content: "\e943";
+    margin-right: 7px;
+}
+
+.icon-uniE930:before {
+    content: "\e944";
+    margin-right: 7px;
+}
+
+.icon-uniE90B:before {
+    content: "\e945";
+}
+
+.icon-uniE918:before {
+    content: "\e946";
+}
+
+.icon-untitled:before {
+    content: "\e947";
+}
+
+.icon-untitled2:before {
+    content: "\e948";
+}
+
+.icon-untitled3:before {
+    content: "\e949";
+}
+
+.icon-untitled4:before {
+    content: "\e94a";
+}
+
+.icon-untitled5:before {
+    content: "\e94b";
+}
+
+.icon-untitled6:before {
+    content: "\e94c";
+}
+
+.icon-untitled7:before {
+    content: "\e94d";
+}
+
+.icon-untitled8:before {
+    content: "\e94e";
+}
+
+.icon-untitled9:before {
+    content: "\e94f";
+}
+
+.icon-untitled10:before {
+    content: "\e950";
+}
+
+.icon-untitled11:before {
+    content: "\e951";
+}
+
+.icon-untitled12:before {
+    content: "\e952";
+}
+
+.icon-untitled13:before {
+    content: "\e953";
+}
+
+.icon-untitled14:before {
+    content: "\e954";
+}
+
+.icon-untitled15:before {
+    content: "\e955";
+}
+
+.icon-untitled16:before {
+    content: "\e956";
+}
+
+.icon-untitled17:before {
+    content: "\e957";
+}
+
+.icon-untitled18:before {
+    content: "\e958";
+}
+
+.icon-untitled19:before {
+    content: "\e959";
+}
+
+.icon-untitled20:before {
+    content: "\e95a";
+}
+
+.icon-loop2:before {
+    content: "\e95b";
+}
+
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+    color: #fff;
+    content: "\f122" !important;
+}
+
+@font-face {
+    font-family: 'weizhi-banner';
+    src: url('fonts/weizhi-banner.eot?fd00h8');
+    src: url('fonts/weizhi-banner.eot?fd00h8#iefix') format('embedded-opentype'), url('fonts/weizhi-banner.ttf?fd00h8') format('truetype'), url('fonts/weizhi-banner.woff?fd00h8') format('woff'), url('fonts/weizhi-banner.svg?fd00h8#weizhi-banner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="top-"], [class*=" top-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'weizhi-banner' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.top-fhqt:before {
+    content: "\e927";
+}
+
+.top-grglzx:before {
+    content: "\e924";
+}
+
+.top-qyglzx:before {
+    content: "\e925";
+}
+
+.top-txl:before {
+    content: "\e926";
+}
+
+.top-return:before {
+    color: white;
+    content: "\e923";
+}
+
+.top-holiday:before {
+    content: "\e900";
+}
+
+.top-contract:before {
+    content: "\e901";
+}
+
+.top-pay:before {
+    content: "\e902";
+}
+
+.top-settings:before {
+    content: "\e903";
+}
+
+.top-service:before {
+    content: "\e904";
+}
+
+.top-order:before {
+    content: "\e905";
+}
+
+.top-yhgl:before {
+    content: "\e906";
+}
+
+.top-icon124d:before {
+    content: "\e907";
+}
+
+.top-icon139:before {
+    content: "\e908";
+}
+
+.top-icon134:before {
+    content: "\e909";
+}
+
+.top-crmb:before {
+    content: "\e90a";
+}
+
+.top-shebao:before {
+    content: "\e90b";
+}
+
+.top-icon122b:before {
+    content: "\e90c";
+}
+
+.top-icon123b:before {
+    content: "\e90d";
+}
+
+.top-soa:before {
+    content: "\e90e";
+}
+
+.top-bm:before {
+    content: "\e90f";
+}
+
+.top-dy:before {
+    content: "\e910";
+}
+
+.top-ks:before {
+    content: "\e911";
+}
+
+.top-qd:before {
+    content: "\e912";
+}
+
+.top-richeng:before {
+    content: "\e913";
+}
+
+.top-icon29b:before {
+    content: "\e914";
+}
+
+.top-rencaiku:before {
+    content: "\e915";
+}
+
+.top-icon101:before {
+    content: "\e916";
+}
+
+.top-icon110:before {
+    content: "\e917";
+}
+
+.top-icon114:before {
+    content: "\e918";
+}
+
+.top-icon115:before {
+    content: "\e919";
+}
+
+.top-tuichu:before {
+    content: "\e91a";
+}
+
+.top-icon2b:before {
+    content: "\e91b";
+}
+
+.top-wh2:before {
+    content: "\e91c";
+}
+
+.top-icon52b:before {
+    content: "\e91d";
+}
+
+.top-glzx:before {
+    content: "\e91e";
+}
+
+.top-yh:before {
+    content: "\e91f";
+}
+
+.top-xiaoxi:before {
+    content: "\e920";
+}
+
+.top-apps:before {
+    content: "\e921";
+}
+
+.top-icon4b:before {
+    content: "\e922";
+}
+
+
+/*** ****************************************************图标 结束**************************************************** ***/
+/*** ****************************************************图标 结束**************************************************** ***/
+/*** ****************************************************图标 结束**************************************************** ***/
+/*** ****************************************************图标 结束**************************************************** ***/
+/*** ****************************************************图标 结束**************************************************** ***/
+/*** ****************************************************图标 结束**************************************************** ***/
+/*** ****************************************************图标 结束**************************************************** ***/
+
+.appBtn {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px 5px;
+    padding-top: 10px;
+    float: left;
+}
+
+.appBtn:hover {
+    width: 90px;
+    height: 90px;
+    margin: 5px 0;
+    padding: 5px;
+    padding-top: 15px;
+    float: left;
+}
+
+/*应用切换*/
+ul li {
+    list-style: none;
+}
+
+.apps-box {
+    width: 64px;
+}
+
+.apps-box ul {
+    width: 500px;
+    padding: 0px 5px 5px 5px;
+    display: table;
+}
+//.apps-box ul:before, .apps-box ul:after { width: 0; height: 0; border: 8px solid transparent; border-bottom-color: #fff; content: ''; position: absolute; top: -5px; left: 14px; z-index: 1012; }
+//.apps-box ul:after { border-bottom-color: #ddd; top: -6px; z-index: 1011; }
+.apps-box li {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px 5px;
+    padding-top: 10px;
+}
+
+.apps-box li:hover {
+    width: 90px;
+    height: 90px;
+    margin: 5px 0;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.apps-box i {
+    line-height: 30px !important;
+    font-size: 30px !important;
+    color: #fff;
+}
+
+.apps-box p {
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+
+.caretUp {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}

@@ -1,0 +1,21 @@
+﻿@include extjs-menu-ui(
+ $ui: 'banner-tool-toolbar',  
+ $ui-text-color:#333333,
+ $ui-item-active-text-color:#666666,
+ $ui-border-color:#006cb8,
+ $ui-border-width:1px,
+ $ui-item-active-background-color:#f2f2f2,
+ $ui-item-active-glyph-color:#008beb
+);
+
+.x-menu-banner-tool-toolbar{
+    border-top-width:0px;
+}
+/*
+    修改menu-items里面的字体图标的颜色
+*/
+.x-menu-item-banner-tool-toolbar .x-menu-item-icon-banner-tool-toolbar{
+    color:#008beb;
+}
+
+.x-css-shadow{display:none;}
