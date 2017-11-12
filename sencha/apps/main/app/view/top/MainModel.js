@@ -3,12 +3,12 @@
  */
 Ext.define('main.view.top.MainModel', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.main',
+    alias: 'viewmodel.top-main',
 
     data: {
         companys:[],
         cName:'IKNOW',
-        uName:'马云',
+        uName:'马云1',
         src:''
     }
 

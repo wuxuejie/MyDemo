@@ -8,69 +8,48 @@ Ext.define('main.view.top.topSelectContainer.MainController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.topSelectContainer-main',
 
-    onAfterrender: function (tb, op) {
-        var vm = this.getViewModel();
-        tb.on({
-            element: 'el',
-            mouseover: this.mouseOver,
-            mouseout: this.mouseOut,
-            scope: tb
-        });
-
-        // tb.getEl().setStyle('cursor', 'pointer');
-    },
-    onMenuAfterrender:function(menu){
-        menu.setItems(this.subMenuItems);
-    },
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
-    },
     mouseOver: function (tbEl, e, op) {
         var me = this,
-            menu = this.getSubMenu();
+            menu = Ext.getCmp('option'),
+            vm = this.getViewModel();
 
-        if (!menu) {
+        if (menu && menu.isVisible()) {
             return;
         }
-
-        menu.isShowing = Ext.defer(function () {
-            if (menu.isHidingMenu != 0) {
-                clearTimeout(menu.isHidingMenu);
-                menu.isHidingMenu = 0;
-            }
-
-            me.fnSetHtml('icon-icon115');
-
-            if (menu.isVisible()) {
-                return;
-            }
-
-            menu.showBy(me, "tr-br");
-        }, 10, menu);
+        
+        vm.set('iconClass', 'icon-icon115');
+        menu.showBy(me.view, "tr-br");
     },
 
     mouseOut: function (tbEl, e, op) {
         var me = this,
-            menu = me.getSubMenu();
-
-        var fromEl = tbEl.getRelatedTarget(),
-          isChildEl = me.el.contains(fromEl) || (menu && menu.el && menu.el.contains(fromEl));
-
+            menu = Ext.getCmp('option'),
+            vm = this.getViewModel();
+        var fromEl = e.getRelatedTarget(),
+            isChildEl = me.view.el.contains(fromEl) || menu.el.contains(fromEl);
         if (isChildEl) {
             return;
         }
-
-        if (!menu) {
+        if (menu && !menu.isHidden()) {
+            menu.hide();
+            vm.set('iconClass', 'icon-icon110');
+        }
+    },
+    fnSetHtml: function (gly) {
+        var me = this.view;
+        var tbtext = me.down('tbtext[tag=action]');
+        if (!tbtext) {
             return;
         }
+        var html = '<b style="color:#fff;font-size:12px;">' + (me.showText || '') + '</b>';
+        if (me.isShowIcon) {
+            html += '<span style="margin-left:5px;font-family:icomoon; font-size:18; color: #ffffff;" class="' + gly + '"></span>';
+        }
+        tbtext.setConfig('html', html);
+    },
 
-        if (!menu.isHidden()) {
-            menu.isHidingMenu = Ext.defer(menu.hide, 10, menu);
-        }
-        else if (menu.isShowing) {
-            clearTimeout(menu.isShowing);
-        }
+    //安全退出
+    onLogOut: function () {
+        console.log('onLogOut');
     }
 });

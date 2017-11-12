@@ -6,20 +6,44 @@
  */
 Ext.define('main.view.top.MainController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.main',
+    alias: 'controller.top-main',
+    // init: function () {
+    //     var vm = this.getViewModel();
+    //     var userNmae = vm.get('uName');
 
-    onAfterrender: function () {
-        console.log('onAfterrender');
-    },
-    
-    onMenuClick:function(btn){
-        debugger;
-        console.log('onMenuClick');
+    //     this.getView().setHtml('<span style="font-weight: bold;color:#fff;padding:0 20px">' + userNmae + '<span>');
+
+    // },
+    // onAfterrender: function () {
+    //     var vm = this.getViewModel();
+    //     var userNmae = vm.get('uName');
+
+    //     this.getView().setHtml('<span style="font-weight: bold;color:#fff;padding:0 20px">' + userNmae + '<span>');
+    // },
+
+    onMenuClick: function (btn) {
+        console.log(btn.tag);
+
+        switch (parseInt(btn.tag)) {
+            case 1:
+                alert('个人中心');
+                break;
+            case 2:
+                //管理中心
+                break;
+            case 3:
+                //版本说明
+                break;
+            case 4:
+                //安全退出
+                break;
+            default:
+                break;
+        }
 
     },
-    //安全退出
-    onLogOut:function(){
-        console.log('onLogOut');
+    onGoHome: function () {
+        Ext.toast('返回主页', '', 't');
 
     }
 });

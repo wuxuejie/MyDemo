@@ -120,15 +120,14 @@
 
         //暂时把名称显示出来,以后要去掉的 只要把下面的注释给还原就行了
         tbar.push({
-            //xtype: 'button',
             xtype: 'headOnTopContainer',
             tag: 'head',
             layout: 'hbox',
             cls: 'iknow-tbar-head-panel',
             isShowIcon: true,
             showText: uName,
-            //margin: '0 10 0 0',
-            //width: 80,
+            margin: '0 10 0 0',
+            width: 80,
             height: 50,
             subMenuItems: menItems,
             items: [{
