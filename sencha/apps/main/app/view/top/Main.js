@@ -10,7 +10,7 @@
     requires: [
         'main.view.top.MainController',
         'main.view.top.MainModel',
-        'main.view.top.topSelectContainer.Main',
+        'main.view.top.personalContainer.Main',
     ],
     defaults: {
         scale: 'large',
@@ -34,7 +34,7 @@
             html: '{cName}',
         }
     }, {
-        xtype: 'topSelectContainer',
+        xtype: 'personalContainer',
         tag: 'head',
         layout: 'hbox',
         cls: 'iknow-tbar-head-panel'

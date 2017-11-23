@@ -1,2 +1,2 @@
 // @tag full-page
-// @require /Users/wuxuejie/development/git/sencha/apps/main/app.js
+// @require E:\MyCode\demo\git\sencha\apps\main\app.js
