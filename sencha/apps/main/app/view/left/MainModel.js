@@ -6,11 +6,11 @@ Ext.define('main.view.left.MainModel', {
     alias: 'viewmodel.left-main',
 
     data: {
-        isMicro: false,width:73
+        isMicro: false
     },
     formulas: {
         width: function (get) {
-            return get('isMicro') ? 73 : 146;
+            return get('isMicro') ? 40 : 146;
         }
     }
     //TODO - add data, formulas and/or methods to support your view

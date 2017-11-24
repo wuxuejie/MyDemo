@@ -51,6 +51,7 @@ Ext.define('main.view.top.personalContainer.Main', {
         showSeparator: false,
         isHidingMenu: 0,
         isShowing: 0,
+        cls:'personal-container-bar',
         defaults: {
             style: 'border:1px solid #006cb8;border-top-width:0px;border-bottom-width:0px;',
             listeners: {
@@ -79,10 +80,7 @@ Ext.define('main.view.top.personalContainer.Main', {
         }],
         tbar: {
             xtype: 'box',
-            html: '<div style="position:relative;width:100%;height:3px;background-color:#fff;border:1px solid #006cb8;border-bottom-width:0px;margin-top:10px;">' +
-                '<div class="caretUp" style="position:absolute;top:-10px;right:15px;border-bottom:10px solid #006cb8"></div>' +
-                '<div class="caretUp" style="position:absolute;top:-9px;right:15px;"></div>' +
-                '</div>'
+            html: '<div class="caretUp"><div class="warp"></div><div class="in"></div></div>'
         },
         bbar: {
             xtype: 'box',
