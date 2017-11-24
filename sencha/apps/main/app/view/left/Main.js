@@ -24,6 +24,10 @@ Ext.define('main.view.left.Main', {
         ui: 'navigation',
         expanderFirst: false,
         expanderOnly: false,
+        bind:{
+            width: '{width}',
+            micro:'{isMicro}'
+        },
         store: {
             root: {
                 expanded: true,

@@ -1,83 +1,242 @@
-/**
- * Generates a set of style rules for the "navigation" tab UI.
- */
-@include extjs-tab-panel-ui(
-    $ui: 'navigation',
-    $ui-tab-background-color: transparent,
-    $ui-tab-background-color-over: #505050,
-    $ui-tab-background-color-active: #303030,
-    $ui-tab-background-gradient: 'none',
-    $ui-tab-background-gradient-over: 'none',
-    $ui-tab-background-gradient-active: 'none',
-    $ui-tab-color: #acacac,
-    $ui-tab-color-over: #c4c4c4,
-    $ui-tab-color-active: #fff,
-    $ui-tab-glyph-color: #acacac,
-    $ui-tab-glyph-color-over: #c4c4c4,
-    $ui-tab-glyph-color-active: #fff,
-    $ui-tab-glyph-opacity: 1,
-    $ui-tab-border-radius: 0,
-    $ui-tab-border-width: 0,
-    $ui-tab-inner-border-width: 0,
-    $ui-tab-padding: 24px,
-    $ui-tab-margin: 0,
-    $ui-tab-font-size: 15px,
-    $ui-tab-font-size-over: 15px,
-    $ui-tab-font-size-active: 15px,
-    $ui-tab-line-height: 19px,
-    $ui-tab-font-weight: bold,
-    $ui-tab-font-weight-over: bold,
-    $ui-tab-font-weight-active: bold,
-    $ui-tab-icon-width: 24px,
-    $ui-tab-icon-height: 24px,
-    $ui-tab-icon-spacing: 5px,
-    $ui-bar-background-color: #404040,
-    $ui-bar-background-gradient: 'none',
-    $ui-bar-padding: 0,
-    $ui-strip-height: 0
-);
-
-/**
- * Generates a set of style rules for the "navigation" panel UI.
- */
-@include extjs-panel-ui(
-    $ui: 'navigation',
-    $ui-header-color: #fff,
-    $ui-header-glyph-color: #fff,
-    $ui-header-glyph-opacity: 1,
-    $ui-header-font-size: 20px,
-    $ui-header-line-height: 24px,
-    $ui-header-font-weight: bold,
-    $ui-header-icon-height: 24px,
-    $ui-header-icon-width: 24px,
-    $ui-header-icon-spacing: 15px,
-    $ui-header-background-color: $base-color,
-    $ui-header-padding: 0,
-    $ui-header-text-margin: 36px,
-    $ui-header-noborder-adjust: false
-);
-
-.x-title-icon-navigation {
-    font-family: FontAwesome;
-    color: #fff;
-    font-size: 24px;
-    line-height: 24px;
-}
-
-.x-tab-icon-el-navigation {
-    font-family: FontAwesome;
-    color: #acacac;
-
-    .x-tab-over & {
-        color: #c4c4c4;
-    }
-
-    .x-tab-active & {
-        color: #fff;
+.personal-container-bar {
+    .caretUp {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border: 1px solid #006cb8;
+        border-bottom-width: 0px;
+        margin-top: 10px;
+        div {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #fff;
+            &.warp {
+                position: absolute;
+                top: -10px;
+                right: 15px;
+                border-bottom: 10px solid #006cb8
+            }
+            &.in {
+                position: absolute;
+                top: -9px;
+                right: 15px;
+            }
+        }
     }
 }
 
-.x-panel-header-title-navigation > .x-title-text-navigation:after {
-    top: 30px;
-    right: -24px;
+.NavigationBar {
+    background-color: #006CB8 !important;
+    height: 50px;
+    padding: 0;
+    border: 0 solid #1577BB;
+    
+}
+
+.NavigationBar .x-toolbar-item {
+    background-color: #006CB8 !important;
+    border-width: 0;
+    background-image: none;
+    padding: 0;
+    height: 50px;
+    line-height: 50px;
+}
+
+.NavigationBar .x-toolbar-item:hover {
+    background-color: #0060a4 !important;
+    height: 50px;
+}
+
+.iknow-tbar-head {
+    border-radius: 35px
+}
+
+.iknow-tbar-head-panel {
+    background-color: #006bb7 !important;
+    height: 50px;
+    padding: 0;
+    border: 0 solid #1577BB;
+}
+
+.iknow-tbar-head-panel:hover {
+    background-color: #0060a4!important;
+    height: 50px;
+}
+
+@include extjs-menu-ui(
+     $ui: 'iknow-menu', 
+     $ui-text-color:#333333, 
+     $ui-item-active-text-color:#666666, 
+     $ui-border-color:#f3f5fa, 
+     $ui-border-width:1px, 
+     $ui-item-active-background-color:#f2f2f2, 
+     $ui-item-active-glyph-color:#008beb,
+     $ui-glyph-color: #008beb,
+    //  $ui-background-color: $menu-background-color,
+    //  $ui-border-color: $menu-border-color,
+    //  $ui-border-style: $menu-border-style,
+    //  $ui-border-width: $menu-border-width,
+    //  $ui-padding: $menu-padding,
+    //  $ui-item-font-family: $menu-item-font-family,
+    //  $ui-item-font-size: $menu-item-font-size,
+    //  $ui-item-font-weight: $menu-item-font-weight,
+    //  $ui-item-height: $menu-item-height,
+    //  $ui-item-border-width: $menu-item-border-width,
+    //  $ui-item-cursor: $menu-item-cursor,
+    //  $ui-item-disabled-cursor: $menu-item-disabled-cursor,
+    //  $ui-item-active-text-color: $menu-item-active-text-color,
+    //  $ui-item-active-background-color: $menu-item-active-background-color,
+    //  $ui-item-active-border-color: $menu-item-active-border-color,
+    //  $ui-item-background-gradient: $menu-item-background-gradient,
+    //  $ui-item-active-border-radius: $menu-item-active-border-radius,
+    //  $ui-item-icon-size: $menu-item-icon-size,
+    //  $ui-glyph-color: $menu-glyph-color,
+    //  $ui-glyph-font-size: $menu-glyph-font-size,
+    //  $ui-glyph-opacity: $menu-glyph-opacity,
+    //  $ui-item-active-glyph-color: $menu-item-active-glyph-color,
+    //  $ui-item-checkbox-size: $menu-item-checkbox-size,
+    //  $ui-item-checkbox-glyph: $menu-item-checkbox-glyph,
+    //  $ui-item-checkbox-checked-glyph: $menu-item-checkbox-checked-glyph,
+    //  $ui-item-checkbox-glyph-color: $menu-item-checkbox-glyph-color,
+    //  $ui-item-checkbox-group-glyph: $menu-item-checkbox-group-glyph,
+    //  $ui-item-checkbox-group-checked-glyph: $menu-item-checkbox-group-checked-glyph,
+    //  $ui-item-checkbox-group-glyph-color: $menu-item-checkbox-group-glyph-color,
+    //  $ui-item-active-checkbox-group-glyph-color: $menu-item-active-checkbox-group-glyph-color,
+    //  $ui-item-active-checkbox-glyph-color: $menu-item-active-checkbox-glyph-color,
+    //  $ui-item-icon-background-position: $menu-item-icon-background-position,
+    //  $ui-item-icon-vertical-offset: $menu-item-icon-vertical-offset,
+    //  $ui-item-text-vertical-offset: $menu-item-text-vertical-offset,
+    //  $ui-item-text-horizontal-spacing: $menu-item-text-horizontal-spacing,
+    //  $ui-item-icon-horizontal-spacing: $menu-item-icon-horizontal-spacing,
+    //  $ui-item-arrow-horizontal-spacing: $menu-item-arrow-horizontal-spacing,
+    //  $ui-item-separator-margin: $menu-item-separator-margin,
+    //  $ui-item-arrow-height: $menu-item-arrow-height,
+    //  $ui-item-arrow-width: $menu-item-arrow-width,
+    //  $ui-item-arrow-margin: $menu-item-arrow-margin,
+    //  $ui-item-arrow-glyph-color: $menu-item-arrow-glyph-color,
+    //  $ui-item-active-arrow-glyph-color: $menu-item-active-arrow-glyph-color,
+    //  $ui-item-arrow-glyph: $menu-item-arrow-glyph,
+    //  $ui-item-arrow-glyph-rtl: $menu-item-arrow-glyph-rtl,
+    //  $ui-item-disabled-opacity: $menu-item-disabled-opacity,
+    //  $ui-component-margin: $menu-component-margin,
+    //  $ui-separator-border-color: $menu-separator-border-color,
+    //  $ui-separator-background-color: $menu-separator-background-color,
+    //  $ui-separator-size: $menu-separator-size,
+    //  $ui-scroller-width: $menu-scroller-width,
+    //  $ui-scroller-height: $menu-scroller-height,
+    //  $ui-scroller-border-color: $menu-scroller-border-color,
+    //  $ui-scroller-border-width: $menu-scroller-border-width,
+    //  $ui-scroller-top-margin: $menu-scroller-top-margin,
+    //  $ui-scroller-bottom-margin: $menu-scroller-bottom-margin,
+    //  $ui-scroller-cursor: $menu-scroller-cursor,
+    //  $ui-scroller-cursor-disabled: $menu-scroller-cursor-disabled,
+    //  $ui-scroller-opacity: $menu-scroller-opacity,
+    //  $ui-scroller-opacity-over: $menu-scroller-opacity-over,
+    //  $ui-scroller-opacity-pressed: $menu-scroller-opacity-pressed,
+    //  $ui-scroller-opacity-disabled: $menu-scroller-opacity-disabled,
+    //  $ui-scroller-glyph-color: $menu-scroller-glyph-color,
+    //  $ui-scroller-top-glyph: $menu-scroller-top-glyph,
+    //  $ui-scroller-bottom-glyph: $menu-scroller-bottom-glyph,
+    //  $ui-classic-scrollers: $menu-classic-scrollers,
+    //  $ui-item-arrow-top-offset: 0   
+     $ui-item-glyph-color:#008beb
+);
+.x-css-shadow {
+    display: none;
+}
+
+@include treelist-ui (
+    $ui:'navigation',
+ 
+    $background-color: #32404e,
+    // $padding: null,
+ 
+    $toolstrip-background-color: #32404e,
+ 
+    //$tool-float-indicator-color: #fff,
+    $tool-float-indicator-width: 100px,
+ 
+    // $tool-selected-color: null,
+    $tool-selected-background-color: #475360,
+ 
+    // $tool-indicator-selected-color: null,
+    $tool-indicator-selected-width: 100px,
+ 
+    // $item-expanded-background-color: null,
+    // $item-expanded-child-background-color: null,
+ 
+    $item-line-height : 40px,
+    $item-line-height-big : 80px,
+ 
+    $item-selected-background-color: #475360,
+ 
+    $item-icon-color: #9DA7AB,
+    $item-icon-over-color: #fff,
+    $item-icon-font-size: 18px,
+    $item-icon-font-size-big:18px,
+    // $item-icon-width: 30px,
+    // $item-icon-width-big: 30px,
+ 
+     $item-expander-color: #fff,
+    // $item-expander-over-color: null,
+    // $item-expander-font-size: null,
+    // $item-expander-font-size-big: null,
+    // $item-expander-width: null,
+    // $item-expander-width-big: null,
+ 
+    // $item-expander-glyph: null,
+    // $item-expander-expanded-glyph: null,
+ 
+    $item-text-color: #9DA7AB,
+    $item-text-icon-gap:  #9DA7AB,
+    $item-text-over-color: #adb3b8,
+    // $item-text-font-size: null,
+    // $item-text-overflow: null,
+ 
+    // $item-icon-over-transition: null,
+    // $item-text-over-transition: null,
+    // $item-expander-over-transition: null,
+ 
+    // $row-indicator-selected-color: null,
+    // $row-indicator-selected-over-color: null, 
+    // $row-indicator-over-color: null,
+
+     $row-indicator-width: null,
+    $row-over-background-color: #3c4a57,
+    $row-selected-background-color: #475360,
+    $row-selected-over-background-color: #475360,
+    $row-over-transition: null
+);
+.x-treelist-navigation{
+    color:#9DA7AB;
+    .x-treelist-item-selected{ 
+        > .x-treelist-row:before{
+            background-color: #57c6f8;            
+            content: " ";
+            position: absolute;
+            display: block;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            cursor: pointer;
+        }
+    }
+    .x-treelist-item-icon {
+        width: 22px;
+    }
+    &.x-treelist-micro{
+        .x-treelist-toolstrip {
+            .x-treelist-item-selected{
+                width: 40px;
+                border-right: 5px  #57c6f8 solid;
+            }
+        }
+    }
+    .x-treelist-item-icon,.x-treelist-item-expander,.x-treelist-item-text{
+        color:#9DA7AB;
+    }
 }

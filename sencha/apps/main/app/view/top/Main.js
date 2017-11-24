@@ -24,7 +24,8 @@
         width: 73,
         handler: 'onGoHome',
     }, {
-        xtype: 'breaktopbutton',
+        xtype: 'button',
+        iconCls: 'icon-apps',
         width: 73
     }, '->', {
         xtype: 'button',
