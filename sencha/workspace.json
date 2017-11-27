@@ -4,7 +4,8 @@
      */
     "apps": [
         "apps/main",
-        "apps/demo"
+        "apps/demo",
+        "apps/index"
     ],
 
     /**
