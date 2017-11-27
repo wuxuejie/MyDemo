@@ -7,14 +7,20 @@ Ext.define('main.view.main.MainModel', {
     alias: 'viewmodel.main',
 
     data: {
+        cName:'IKNOW',
         name: 'main',
-        isMicro: false
+        isMicro: false,
+        top:{
+            companys:[],
+            cName:'IKNOW',
+            uName:'马云1',
+            src:''
+        }
     },
     formulas: {
         width: function (get) {
-            return get('isMicro') ? 73 : 146;
+            return get('isMicro') ? 40 : 146;
         }
     }
-
     //TODO - add data, formulas and/or methods to support your view
 });

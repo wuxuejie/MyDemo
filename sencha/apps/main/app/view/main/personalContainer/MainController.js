@@ -4,7 +4,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('main.view.top.personalContainer.MainController', {
+Ext.define('main.view.main.personalContainer.MainController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.personalContainer-main',
 

@@ -1,7 +1,7 @@
 /**
  * This class is the view model for the Main view of the application.
  */
-Ext.define('main.view.top.personalContainer.MainModel', {
+Ext.define('main.view.main.personalContainer.MainModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.personalContainer-main',
 

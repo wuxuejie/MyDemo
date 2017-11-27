@@ -1,11 +1,11 @@
-Ext.define('main.view.left.Main', {
+Ext.define('main.view.main.Left', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.leftBar',
-    viewModel: 'left-main',
-    controller: 'left-main',
+    controller: 'main',
+    viewModel: 'main',
     requires: [
-        'main.view.left.MainController',
-        'main.view.left.MainModel'
+        'main.view.main.MainController',
+        'main.view.main.MainModel',
     ],
     scrollable: 'y',
     cls: 'scrollbar',
@@ -42,7 +42,9 @@ Ext.define('main.view.left.Main', {
                     children: [{
                         text: 'book report',
                         leaf: true,
-                        iconCls: 'x-fa fa-book'
+                        iconCls: 'x-fa fa-book',
+                        href:'../index',
+                        hrefTarget:'_blank'
                     }, {
                         text: 'algebra',
                         leaf: true,
@@ -58,6 +60,7 @@ Ext.define('main.view.left.Main', {
         },
         listeners: {
             selectionchange: function (tree, node) {
+                debugger;
                 var href = node.get('href'),
                     tempHref = node.get('tempHref');
                 if (href) {

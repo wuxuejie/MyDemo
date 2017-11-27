@@ -8,16 +8,15 @@
 Ext.define('main.view.main.Main', {
     extend: 'Ext.container.Viewport',
     xtype: 'app-main',
-
     requires: [
         'main.view.main.MainController',
         'main.view.main.MainModel',
-        'main.view.top.Main',
+        'main.view.main.Top',
     ],
     xtype: 'app-uxiframe',
     layout: 'border',
-    // controller: 'main',
-    // viewModel: 'main',
+    controller: 'main',
+    viewModel: 'main',
     items: [{
         region: 'north',
         xtype: 'topBar',

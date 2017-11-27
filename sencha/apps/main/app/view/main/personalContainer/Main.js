@@ -1,11 +1,11 @@
-Ext.define('main.view.top.personalContainer.Main', {
+Ext.define('main.view.main.personalContainer.Main', {
     extend: 'Ext.form.FieldContainer',
     alias: 'widget.personalContainer',
     viewModel: 'personalContainer-main',
     controller: 'personalContainer-main',
     requires: [
-        'main.view.top.personalContainer.MainController',
-        'main.view.top.personalContainer.MainModel'
+        'main.view.main.personalContainer.MainController',
+        'main.view.main.personalContainer.MainModel'
     ],
     handleMouseEvents: true,
     onRender: function () {
