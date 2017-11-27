@@ -7,6 +7,7 @@
  */
 Ext.define('main.view.main.Main', {
     extend: 'Ext.container.Viewport',
+    alias: 'widget.appMain',
     xtype: 'app-main',
     requires: [
         'main.view.main.MainController',
@@ -24,6 +25,7 @@ Ext.define('main.view.main.Main', {
     }, {
         xtype: 'leftBar',
         region: 'west',
+        width:146,
         bind: {
             width: '{width}',
         },
@@ -32,11 +34,11 @@ Ext.define('main.view.main.Main', {
         bodyStyle: 'background-color:#32404E'
     }, {
         xtype: 'panel',
+        name:'app-container',
         region: 'center',
         layout: 'fit',
         items: [{
-            xtype: 'uxiframe',
-            loadMask: '正在加载应用……'
+            xtype: 'index'
         }]
     }]
 

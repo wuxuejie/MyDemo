@@ -24,35 +24,52 @@ Ext.define('main.view.main.Left', {
         ui: 'navigation',
         expanderFirst: false,
         expanderOnly: false,
-        bind:{
-            width: '{width}',
-            micro:'{isMicro}'
+        bind: {
+            // width: '{width}',
+            micro: '{isMicro}'
         },
         store: {
             root: {
                 expanded: true,
                 children: [{
-                    text: 'detention',
+                    text: '客户中心',
                     leaf: true,
+                    href: 'index',
                     iconCls: 'x-fa fa-frown-o'
                 }, {
-                    text: 'homework',
+                    text: '员工管理',
                     expanded: true,
                     iconCls: 'x-fa fa-folder',
                     children: [{
-                        text: 'book report',
+                        text: '员工列表',
                         leaf: true,
                         iconCls: 'x-fa fa-book',
-                        href:'../index',
-                        hrefTarget:'_blank'
+                        href: 'staff'
                     }, {
-                        text: 'algebra',
+                        text: '角色管理',
                         leaf: true,
-                        iconCls: 'x-fa fa-graduation-cap'
+                        iconCls: 'x-fa fa-book',
+                        href: 'staff'
+                    }, {
+                        text: '模块管理',
+                        leaf: true,
+                        iconCls: 'x-fa fa-book',
+                        href: 'staff'
+                    }, {
+                        text: '项目管理',
+                        leaf: true,
+                        iconCls: 'x-fa fa-book',
+                        href: 'staff'
                     }]
                 }, {
-                    text: 'buy lottery tickets',
+                    text: '商品中心',
                     leaf: true,
+                    href: 'index',
+                    iconCls: 'x-fa fa-usd'
+                }, {
+                    text: '报表中心',
+                    leaf: true,
+                    href: 'index',
                     iconCls: 'x-fa fa-usd'
                 }]
             },
@@ -60,23 +77,16 @@ Ext.define('main.view.main.Left', {
         },
         listeners: {
             selectionchange: function (tree, node) {
-                debugger;
-                var href = node.get('href'),
-                    tempHref = node.get('tempHref');
-                if (href) {
-                    href = tempHref || href;
-                    node.set('tempHref', '');
-
-                    var target = node.get('hrefTarget');
-                    if (target == '_blank')
-                        window.open(href);
-                    else
-                        window.location.href = href;
+                if (node.raw && node.raw.href) {
+                    var panel = tree.up('appMain').down('[name=app-container]');
+                    panel.removeAll();
+                    var content = Ext.create({ xtype: node.raw.href });
+                    panel.add(content);
                 }
             },
             afterselectionchange: function (tree, node) {
-                var panel = tree.up('weizhi-list-tree');
-                panel.disableScrollBtn(panel, tree);
+                // var panel = tree.up('treelist');
+                // panel.disableScrollBtn(panel, tree);
             }
         }
     },
