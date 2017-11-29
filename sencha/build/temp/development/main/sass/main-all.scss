@@ -959,6 +959,8 @@ $include-ext-window-toast: dynamic(true);;
 $include-ext-window-window: dynamic(true);;
 $include-iknow-form-fieldcontainer: dynamic(true);;
 $include-common-common: dynamic(true);;
+$include-common-basestore: dynamic(true);;
+$include-common-control-grid-maingrid: dynamic(true);;
 $include-main-application: dynamic(true);;
 $include-main-store-personnel: dynamic(true);;
 $include-main-view-index-main: dynamic(true);;
@@ -995,14 +997,6 @@ $current-resource-root: $core-resource-root;
 $relative-image-path-for-uis: $core-resource-path;
 @import '../../../../../ext/packages/core/sass/etc/all';
 
-/* including package font-awesome */
-$font-awesome-resource-root: 'font-awesome' !default;
-$font-awesome-resource-path: 'font-awesome/images' !default;
-$current-package: 'font-awesome';
-$current-resource-root: $font-awesome-resource-root;
-$relative-image-path-for-uis: $font-awesome-resource-path;
-@import '../../../../../ext/packages/font-awesome/sass/etc/all';
-
 /* including package theme-base */
 $theme-base-resource-root: '' !default;
 $theme-base-resource-path: 'images' !default;
@@ -1026,6 +1020,14 @@ $current-package: 'theme-neptune';
 $current-resource-root: $theme-neptune-resource-root;
 $relative-image-path-for-uis: $theme-neptune-resource-path;
 @import '../../../../../ext/classic/theme-neptune/sass/etc/all';
+
+/* including package font-awesome */
+$font-awesome-resource-root: 'font-awesome' !default;
+$font-awesome-resource-path: 'font-awesome/images' !default;
+$current-package: 'font-awesome';
+$current-resource-root: $font-awesome-resource-root;
+$relative-image-path-for-uis: $font-awesome-resource-path;
+@import '../../../../../ext/packages/font-awesome/sass/etc/all';
 
 /* including package theme-triton */
 $theme-triton-resource-root: '' !default;
@@ -1062,16 +1064,6 @@ $current-resource-root: $core-resource-root;
 $relative-image-path-for-uis: $core-resource-path;
 @import '../../../../../ext/packages/core/sass/var/Component';
 @import '../../../../../ext/packages/core/sass/var/list/TreeItem';
-
-/* including package ux */
-$ux-resource-root: 'ux' !default;
-$ux-resource-path: 'ux/images' !default;
-$current-package: 'ux';
-$current-resource-root: $ux-resource-root;
-$relative-image-path-for-uis: $ux-resource-path;
-@import '../../../../../ext/packages/ux/classic/sass/var/dashboard/GoogleRssView';
-@import '../../../../../ext/packages/ux/classic/sass/var/layout/ResponsiveColumn';
-@import '../../../../../ext/packages/ux/classic/sass/var/rating/Picker';
 
 /* including package theme-base */
 $theme-base-resource-root: '' !default;
@@ -1237,6 +1229,16 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/var/tab/Bar';
 @import '../../../../../ext/classic/theme-triton/sass/var/tree/View';
 
+/* including package ux */
+$ux-resource-root: 'ux' !default;
+$ux-resource-path: 'ux/images' !default;
+$current-package: 'ux';
+$current-resource-root: $ux-resource-root;
+$relative-image-path-for-uis: $ux-resource-path;
+@import '../../../../../ext/packages/ux/classic/sass/var/dashboard/GoogleRssView';
+@import '../../../../../ext/packages/ux/classic/sass/var/layout/ResponsiveColumn';
+@import '../../../../../ext/packages/ux/classic/sass/var/rating/Picker';
+
 /* including package main */
 $main-resource-root: '' !default;
 $main-resource-path: 'images' !default;
@@ -1261,34 +1263,6 @@ $relative-image-path-for-uis: $core-resource-path;
 @import '../../../../../ext/packages/core/sass/src/scroll/TouchScroller';
 @import '../../../../../ext/packages/core/sass/src/scroll/DomScroller';
 @import '../../../../../ext/packages/core/sass/src/list/TreeItem';
-
-/* including package font-awesome */
-$font-awesome-resource-root: 'font-awesome' !default;
-$font-awesome-resource-path: 'font-awesome/images' !default;
-$current-package: 'font-awesome';
-$current-resource-root: $font-awesome-resource-root;
-$relative-image-path-for-uis: $font-awesome-resource-path;
-@import '../../../../../ext/packages/font-awesome/sass/src/all';
-
-/* including package ux */
-$ux-resource-root: 'ux' !default;
-$ux-resource-path: 'ux/images' !default;
-$current-package: 'ux';
-$current-resource-root: $ux-resource-root;
-$relative-image-path-for-uis: $ux-resource-path;
-@import '../../../../../ext/packages/ux/classic/sass/src/Explorer';
-@import '../../../../../ext/packages/ux/classic/sass/src/GroupTabPanel';
-@import '../../../../../ext/packages/ux/classic/sass/src/statusbar/StatusBar';
-@import '../../../../../ext/packages/ux/classic/sass/src/LiveSearchGridPanel';
-@import '../../../../../ext/packages/ux/classic/sass/src/TabScrollerMenu';
-@import '../../../../../ext/packages/ux/classic/sass/src/colorpick/Selector';
-@import '../../../../../ext/packages/ux/classic/sass/src/colorpick/Button';
-@import '../../../../../ext/packages/ux/classic/sass/src/colorpick/Field';
-@import '../../../../../ext/packages/ux/classic/sass/src/dashboard/GoogleRssView';
-@import '../../../../../ext/packages/ux/classic/sass/src/form/ItemSelector';
-@import '../../../../../ext/packages/ux/classic/sass/src/grid/SubTable';
-@import '../../../../../ext/packages/ux/classic/sass/src/layout/ResponsiveColumn';
-@import '../../../../../ext/packages/ux/classic/sass/src/rating/Picker';
 
 /* including package theme-base */
 $theme-base-resource-root: '' !default;
@@ -1451,6 +1425,14 @@ $relative-image-path-for-uis: $theme-neptune-resource-path;
 @import '../../../../../ext/classic/theme-neptune/sass/src/grid/column/Column';
 @import '../../../../../ext/classic/theme-neptune/sass/src/resizer/Resizer';
 
+/* including package font-awesome */
+$font-awesome-resource-root: 'font-awesome' !default;
+$font-awesome-resource-path: 'font-awesome/images' !default;
+$current-package: 'font-awesome';
+$current-resource-root: $font-awesome-resource-root;
+$relative-image-path-for-uis: $font-awesome-resource-path;
+@import '../../../../../ext/packages/font-awesome/sass/src/all';
+
 /* including package font-ext */
 $font-ext-resource-root: 'font-ext' !default;
 $font-ext-resource-path: 'font-ext/images' !default;
@@ -1472,6 +1454,26 @@ $relative-image-path-for-uis: $theme-triton-resource-path;
 @import '../../../../../ext/classic/theme-triton/sass/src/tab/Tab';
 @import '../../../../../ext/classic/theme-triton/sass/src/tree/View';
 @import '../../../../../ext/classic/theme-triton/sass/src/window/Toast';
+
+/* including package ux */
+$ux-resource-root: 'ux' !default;
+$ux-resource-path: 'ux/images' !default;
+$current-package: 'ux';
+$current-resource-root: $ux-resource-root;
+$relative-image-path-for-uis: $ux-resource-path;
+@import '../../../../../ext/packages/ux/classic/sass/src/Explorer';
+@import '../../../../../ext/packages/ux/classic/sass/src/GroupTabPanel';
+@import '../../../../../ext/packages/ux/classic/sass/src/statusbar/StatusBar';
+@import '../../../../../ext/packages/ux/classic/sass/src/LiveSearchGridPanel';
+@import '../../../../../ext/packages/ux/classic/sass/src/TabScrollerMenu';
+@import '../../../../../ext/packages/ux/classic/sass/src/colorpick/Selector';
+@import '../../../../../ext/packages/ux/classic/sass/src/colorpick/Button';
+@import '../../../../../ext/packages/ux/classic/sass/src/colorpick/Field';
+@import '../../../../../ext/packages/ux/classic/sass/src/dashboard/GoogleRssView';
+@import '../../../../../ext/packages/ux/classic/sass/src/form/ItemSelector';
+@import '../../../../../ext/packages/ux/classic/sass/src/grid/SubTable';
+@import '../../../../../ext/packages/ux/classic/sass/src/layout/ResponsiveColumn';
+@import '../../../../../ext/packages/ux/classic/sass/src/rating/Picker';
 
 /* including package main */
 $main-resource-root: '' !default;

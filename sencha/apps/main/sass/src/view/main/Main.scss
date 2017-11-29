@@ -151,19 +151,20 @@
 @include treelist-ui (
     $ui:'navigation',
  
+    
     $background-color: #32404e,
     // $padding: null,
  
     $toolstrip-background-color: #32404e,
  
     //$tool-float-indicator-color: #fff,
-    // $tool-float-indicator-width: 100px,
+    //$tool-float-indicator-width: 100px,
  
-    // $tool-selected-color: null,
-    $tool-selected-background-color: #475360,
+    $tool-selected-color: #fff,
+    $tool-selected-background-color: #57c6f8,
  
     // $tool-indicator-selected-color: null,
-    // $tool-indicator-selected-width: 100px,
+    $tool-indicator-selected-width: 73px,
  
     // $item-expanded-background-color: null,
     // $item-expanded-child-background-color: null,
@@ -176,9 +177,9 @@
     $item-icon-color: #9DA7AB,
     $item-icon-over-color: #fff,
     $item-icon-font-size: 18px,
-    $item-icon-font-size-big:18px,
-    // $item-icon-width: 30px,
-    // $item-icon-width-big: 30px,
+    // $item-icon-font-size-big:36px,
+    $item-icon-width: 22px,
+    // $item-icon-width-big: 80px,
  
      $item-expander-color: #fff,
     // $item-expander-over-color: null,
@@ -228,15 +229,22 @@
     .x-treelist-item-icon {
         width: 22px;
     }
-    &.x-treelist-micro{
-        .x-treelist-toolstrip {
-            .x-treelist-item-selected{
-                width: 40px;
-                border-right: 5px  #57c6f8 solid;
-            }
-        }
-    }
+    
     .x-treelist-item-icon,.x-treelist-item-expander,.x-treelist-item-text{
         color:#9DA7AB;
+    }
+}
+.x-treelist-navigation.x-treelist-micro{
+    .x-treelist-toolstrip {
+        width: 73px;
+        .x-treelist-item-tool{
+            width: 73px;
+        }
+        .x-treelist-item-selected{
+            border-left: 5px  #57c6f8 solid;
+        }
+    }
+    .x-treelist-item-icon {
+        width: 73px;
     }
 }

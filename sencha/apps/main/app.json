@@ -558,5 +558,11 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "ec32ccfd-1dfb-4529-933e-60b222051a1c"
+    "id": "ec32ccfd-1dfb-4529-933e-60b222051a1c",
+    "language": {
+        "js": {
+            "input": "ES6", // 或 ES7、ES8
+            "output": "ES5"
+        }
+    }
 }

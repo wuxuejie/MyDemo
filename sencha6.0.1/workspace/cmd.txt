@@ -1,0 +1,6 @@
+新建工作空间
+sencha -sdk C:\ext-6.0.1 generate workspace E:\MyCode\demo\git\sencha6.0.1\web
+
+cd E:\MyCode\demo\git\sencha6.0.1\workspace\apps
+
+sencha -sdk C:\ext-6.0.1 generate app -classic main main
