@@ -151,13 +151,17 @@
 @include treelist-ui (
     $ui:'navigation',
  
+<<<<<<< HEAD
     
+=======
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f
     $background-color: #32404e,
     // $padding: null,
  
     $toolstrip-background-color: #32404e,
  
     //$tool-float-indicator-color: #fff,
+<<<<<<< HEAD
     //$tool-float-indicator-width: 100px,
  
     $tool-selected-color: #fff,
@@ -165,6 +169,15 @@
  
     // $tool-indicator-selected-color: null,
     $tool-indicator-selected-width: 73px,
+=======
+    $tool-float-indicator-width: 100px,
+ 
+    // $tool-selected-color: null,
+    // $tool-selected-background-color: null,
+ 
+    // $tool-indicator-selected-color: null,
+    $tool-indicator-selected-width: 100px,
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f
  
     // $item-expanded-background-color: null,
     // $item-expanded-child-background-color: null,
@@ -172,14 +185,24 @@
     $item-line-height : 40px,
     $item-line-height-big : 80px,
  
+<<<<<<< HEAD
     $item-selected-background-color: #32404e,
+=======
+    $item-selected-background-color: #475360,
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f
  
     $item-icon-color: #9DA7AB,
     $item-icon-over-color: #fff,
     $item-icon-font-size: 18px,
+<<<<<<< HEAD
     // $item-icon-font-size-big:36px,
     $item-icon-width: 22px,
     // $item-icon-width-big: 80px,
+=======
+    $item-icon-font-size-big:18px,
+    // $item-icon-width: 30px,
+    // $item-icon-width-big: 30px,
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f
  
      $item-expander-color: #fff,
     // $item-expander-over-color: null,
@@ -204,11 +227,18 @@
     // $row-indicator-selected-color: null,
     // $row-indicator-selected-over-color: null, 
     // $row-indicator-over-color: null,
+<<<<<<< HEAD
 
      $row-indicator-width: null,
     $row-over-background-color: #3c4a57,
     $row-selected-background-color: #475360,
     $row-selected-over-background-color: #475360,
+=======
+     $row-indicator-width: null,
+    $row-over-background-color: #3c4a57,
+    $row-selected-background-color: #475360,
+    // $row-selected-over-background-color: null,
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f
     $row-over-transition: null
 );
 .x-treelist-navigation{
@@ -229,11 +259,23 @@
     .x-treelist-item-icon {
         width: 22px;
     }
+<<<<<<< HEAD
     
+=======
+    &.x-treelist-micro{
+        .x-treelist-toolstrip {
+            .x-treelist-item-selected{
+                width: 40px;
+                border-right: 5px  #57c6f8 solid;
+            }
+        }
+    }
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f
     .x-treelist-item-icon,.x-treelist-item-expander,.x-treelist-item-text{
         color:#9DA7AB;
     }
 }
+<<<<<<< HEAD
 .x-treelist-navigation.x-treelist-micro{
     .x-treelist-toolstrip {
         width: 73px;
@@ -248,3 +290,5 @@
         width: 73px;
     }
 }
+=======
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f

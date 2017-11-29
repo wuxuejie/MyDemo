@@ -24,9 +24,15 @@ Ext.define('main.view.main.Left', {
         ui: 'navigation',
         expanderFirst: false,
         expanderOnly: false,
+<<<<<<< HEAD:sencha/apps/main/app/view/main/Left.js
         bind: {
             // width: '{width}',
             micro: '{isMicro}'
+=======
+        bind:{
+            width: '{width}',
+            micro:'{isMicro}'
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f:sencha/apps/main/app/view/left/Main.js
         },
         store: {
             root: {

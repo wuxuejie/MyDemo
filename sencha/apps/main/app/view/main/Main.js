@@ -12,12 +12,16 @@ Ext.define('main.view.main.Main', {
     requires: [
         'main.view.main.MainController',
         'main.view.main.MainModel',
+<<<<<<< HEAD
         'main.view.main.Top',
+=======
+        'main.view.top.Main',
+>>>>>>> 098cb46d6419887c517c7d8fe70d5ea422b7ac1f
     ],
     xtype: 'app-uxiframe',
     layout: 'border',
-    controller: 'main',
-    viewModel: 'main',
+    // controller: 'main',
+    // viewModel: 'main',
     items: [{
         region: 'north',
         xtype: 'topBar',
