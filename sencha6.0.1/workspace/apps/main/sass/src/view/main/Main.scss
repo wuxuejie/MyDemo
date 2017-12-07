@@ -142,7 +142,8 @@ $ui-item-glyph-color:#008beb);
 @include treelist-ui ( $ui:'navigation', $background-color: #32404e, // $padding: null,
 $toolstrip-background-color: #32404e, //$tool-float-indicator-color: #fff,
 //$tool-float-indicator-width: 100px,
-$tool-selected-color: #fff, $tool-selected-background-color: #57c6f8, // $tool-indicator-selected-color: null,
+$tool-selected-color: #fff, 
+$tool-selected-background-color: #57c6f8, // $tool-indicator-selected-color: null,
 $tool-indicator-selected-width: 73px, // $item-expanded-background-color: null,
 // $item-expanded-child-background-color: null,
 $item-line-height: 40px, $item-line-height-big: 80px, $item-selected-background-color: #32404e, $item-icon-color: #9DA7AB, $item-icon-over-color: #fff, $item-icon-font-size: 18px, // $item-icon-font-size-big:36px,
@@ -162,7 +163,7 @@ $item-text-color: #9DA7AB, $item-text-icon-gap : #9DA7AB, $item-text-over-color:
 // $row-indicator-selected-color: null,
 // $row-indicator-selected-over-color: null, 
 // $row-indicator-over-color: null,
-$row-indicator-width: null, $row-over-background-color: #3c4a57, $row-selected-background-color: #475360, $row-selected-over-background-color: #475360, $row-over-transition: null);
+$row-indicator-width: null, $row-over-background-color: #3c4a57, $row-selected-background-color: #475360, $row-selected-over-background-color: #475360, $row-over-transition: #57c6f8);
 .x-treelist-navigation {
     color: #9DA7AB;
     .x-treelist-item-selected {

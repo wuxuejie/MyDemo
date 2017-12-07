@@ -1,0 +1,11 @@
+E:\MyCode\demo\git\core.net\webapi\ApiApp\bin\Debug\netcoreapp2.0\ApiApp.deps.json
+E:\MyCode\demo\git\core.net\webapi\ApiApp\bin\Debug\netcoreapp2.0\ApiApp.runtimeconfig.json
+E:\MyCode\demo\git\core.net\webapi\ApiApp\bin\Debug\netcoreapp2.0\ApiApp.runtimeconfig.dev.json
+E:\MyCode\demo\git\core.net\webapi\ApiApp\obj\Debug\netcoreapp2.0\ApiApp.csprojResolveAssemblyReference.cache
+E:\MyCode\demo\git\core.net\webapi\ApiApp\obj\Debug\netcoreapp2.0\ApiApp.AssemblyInfo.cs
+E:\MyCode\demo\git\core.net\webapi\ApiApp\bin\Debug\netcoreapp2.0\ApiApp.dll
+E:\MyCode\demo\git\core.net\webapi\ApiApp\bin\Debug\netcoreapp2.0\ApiApp.pdb
+E:\MyCode\demo\git\core.net\webapi\ApiApp\obj\Debug\netcoreapp2.0\ApiApp.csproj.CoreCompileInputs.cache
+E:\MyCode\demo\git\core.net\webapi\ApiApp\obj\Debug\netcoreapp2.0\ApiApp.AssemblyInfoInputs.cache
+E:\MyCode\demo\git\core.net\webapi\ApiApp\obj\Debug\netcoreapp2.0\ApiApp.dll
+E:\MyCode\demo\git\core.net\webapi\ApiApp\obj\Debug\netcoreapp2.0\ApiApp.pdb

@@ -12,7 +12,13 @@ Ext.define('main.view.main.MainController', {
         var me = this,
             vm = me.getViewModel();
         var isMicro = vm.get('isMicro');
-        vm.set('isMicro', !isMicro);      
+        var left = me.getView();
+        vm.set('isMicro', !isMicro);  
+        if(!isMicro){
+            left.collapse();
+        }else{
+            left.expand();
+        }    
     },
 
     onMenuClick: function (btn) {

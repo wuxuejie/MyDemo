@@ -48,7 +48,7 @@ Ext.define('main.view.main.personalContainer.Main', {
         hidden: true,
         xtype: 'menu',
         ui: 'iknow-menu',
-        showSeparator: false,
+        showSeparator: true,
         isHidingMenu: 0,
         isShowing: 0,
         cls:'personal-container-bar',

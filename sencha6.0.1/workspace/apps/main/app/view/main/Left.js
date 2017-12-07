@@ -25,7 +25,6 @@ Ext.define('main.view.main.Left', {
         expanderFirst: false,
         expanderOnly: false,
         bind: {
-            // width: '{width}',
             micro: '{isMicro}'
         },
         store: {
@@ -85,8 +84,6 @@ Ext.define('main.view.main.Left', {
                 }
             },
             afterselectionchange: function (tree, node) {
-                // var panel = tree.up('treelist');
-                // panel.disableScrollBtn(panel, tree);
             }
         }
     },

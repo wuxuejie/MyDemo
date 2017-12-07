@@ -7966,6 +7966,10 @@
     font-size: 18px;
     width: 22px;
 }
+/* http://localhost:1841/ext/packages/core/sass/src/list/TreeItem.scss:198 */
+.x-treelist-navigation .x-treelist-item-expander {
+    color: #57c6f8;
+}
 /* http://localhost:1841/ext/packages/core/sass/src/list/TreeItem.scss:227 */
 .x-treelist-navigation .x-treelist-item-text {
     color: #9da7ab;
@@ -8052,11 +8056,11 @@
 .x-treelist-navigation .x-treelist-item-hide-icon > * > * > .x-treelist-item-text {
     margin-left: #9da7ab;
 }
-/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:166 */
+/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:167 */
 .x-treelist-navigation {
     color: #9da7ab;
 }
-/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:169 */
+/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:170 */
 .x-treelist-navigation .x-treelist-item-selected >.x-treelist-row:before {
     background-color: #57c6f8;
     content: " ";
@@ -8068,29 +8072,29 @@
     height: 100%;
     cursor: pointer;
 }
-/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:181 */
+/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:182 */
 .x-treelist-navigation .x-treelist-item-icon {
     width: 22px;
 }
-/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:184 */
+/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:185 */
 .x-treelist-navigation .x-treelist-item-icon,
 .x-treelist-navigation .x-treelist-item-expander,
 .x-treelist-navigation .x-treelist-item-text {
     color: #9da7ab;
 }
-/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:192 */
+/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:193 */
 .x-treelist-navigation.x-treelist-micro .x-treelist-toolstrip {
     width: 73px;
 }
-/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:194 */
+/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:195 */
 .x-treelist-navigation.x-treelist-micro .x-treelist-toolstrip .x-treelist-item-tool {
     width: 73px;
 }
-/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:197 */
+/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:198 */
 .x-treelist-navigation.x-treelist-micro .x-treelist-toolstrip .x-treelist-item-selected {
     border-left: 5px #57c6f8 solid;
 }
-/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:201 */
+/* http://localhost:1841/apps/main/sass/src/view/main/Main.scss:202 */
 .x-treelist-navigation.x-treelist-micro .x-treelist-item-icon {
     width: 73px;
 }

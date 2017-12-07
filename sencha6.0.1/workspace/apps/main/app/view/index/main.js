@@ -12,6 +12,10 @@ Ext.define("main.view.index.main",{
     viewModel: {
         type: "index.main"
     },
-
-    html: "Hello, index!!"
+    layout: 'border',
+    height:800,
+    width:800,
+    controller: 'main',
+    viewModel: 'main',
+    html:'index'
 });
