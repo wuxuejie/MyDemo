@@ -2,7 +2,7 @@
 Ext.define('common.baseStore', {
     alias: 'store.baseStore',
     extend: 'Ext.data.DirectStore',
-    pageSize: 25,
+    pageSize: 30,
     constructor: function (config) {
         config = Ext.apply({}, config);
         if (!config.proxy) {

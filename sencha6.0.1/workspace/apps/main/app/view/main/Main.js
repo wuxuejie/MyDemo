@@ -11,7 +11,7 @@ Ext.define('main.view.main.Main', {
     xtype: 'app-main',
     requires: [
         'main.view.main.MainController',
-        'main.view.main.MainModel',
+        'main.view.main.MainModel', 
         'main.view.main.Top',
     ],
     xtype: 'app-uxiframe',
