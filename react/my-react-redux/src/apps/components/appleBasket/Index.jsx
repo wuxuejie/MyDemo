@@ -3,9 +3,13 @@ import AppleItem from './AppleItem';
 
 class AppleBusket extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
     }
-    /**  计算当前已吃和未吃苹果的状态*/
+    /**
+     * 计算当前已吃和未吃苹果的状态.
+     * @returns {Object} status.
+     * @memberof AppleBusket.
+     */
     calculateStatus(){
         let status = {
             appleNow: {
@@ -25,7 +29,12 @@ class AppleBusket extends React.Component {
         return status;
     }
 
-    /** 获取未吃苹果的组件数组*/
+    /**
+     * 获取未吃苹果的组件数组.
+     * @param {array} apples apples.
+     * @returns {array} all.
+     * @memberof AppleBusket.
+     */
     getAppleItem(apples) {
         let data = [],actions=this.props.actions;
         apples.forEach(apple => {
@@ -77,4 +86,4 @@ class AppleBusket extends React.Component {
         );
     }
 }
-export default AppleBusket
+export default AppleBusket;
