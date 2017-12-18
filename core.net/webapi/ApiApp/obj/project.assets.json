@@ -12625,11 +12625,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MyCode\\demo\\git\\core.net\\webapi\\ApiApp\\ApiApp.csproj",
+      "projectUniqueName": "e:\\MyCode\\demo\\git\\core.net\\webapi\\ApiApp\\ApiApp.csproj",
       "projectName": "ApiApp",
-      "projectPath": "E:\\MyCode\\demo\\git\\core.net\\webapi\\ApiApp\\ApiApp.csproj",
+      "projectPath": "e:\\MyCode\\demo\\git\\core.net\\webapi\\ApiApp\\ApiApp.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\MyCode\\demo\\git\\core.net\\webapi\\ApiApp\\obj\\",
+      "outputPath": "e:\\MyCode\\demo\\git\\core.net\\webapi\\ApiApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
