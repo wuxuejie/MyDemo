@@ -11,7 +11,6 @@ import './apps/styles/main.scss';
 import reducer from './apps/components/reducers';
 import AppleBasket from './apps/routes/AppleBasket';
 
-
 const store = createStore(reducer, applyMiddleware(thunk));
 
 class App extends Component {
