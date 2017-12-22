@@ -1,10 +1,4 @@
-
-export enum ActionEnum {
-    BEGIN_PICK_APPLE = 1,
-    DONE_PICK_APPLE,
-    FAIL_PICK_APPLE,
-    EAT_APPLE
-}
+import { createAction } from 'redux-actions';
 
 export interface IndexActions {
     pickApple: PickApple;
@@ -16,6 +10,19 @@ export interface IndexActions {
 }
 
 interface PickApple { (): any; }
+// const pickApple: PickApple = handleAction('BEGIN_PICK_APPLE',(state, action)=>{
+//     return fetch('https://hacker-news.firebaseio.com/v0/jobstories.json')
+//     .then(res => {
+//         if (res.status !== 200)
+//             dispatch(failPickApple(res.statusText));
+
+//         let weight = Math.floor(200 + Math.random() * 50);
+//         dispatch(donePickApple(weight));
+
+//     }).catch(e => {
+//         dispatch(failPickApple(e.statusText));
+//     });
+// },'');
 const pickApple: PickApple = () => {
     return function (dispatch: any, getState: any) {
         if (getState().appleBasket.isPicking) {
@@ -39,28 +46,16 @@ const pickApple: PickApple = () => {
 }
 
 interface BeginPickApple { (): any; }
-const beginPickApple: BeginPickApple = () => ({
-    type: ActionEnum.BEGIN_PICK_APPLE
-});
+const beginPickApple: BeginPickApple = createAction('BEGIN_PICK_APPLE');
 
 interface DonePickApple { (appleWeight: number): any; }
-const donePickApple: DonePickApple = (appleWeight: number) => ({
-    type: ActionEnum.DONE_PICK_APPLE,
-    payload: appleWeight
-})
+const donePickApple: DonePickApple =createAction('DONE_PICK_APPLE');
 
 interface FailPickApple { (errMsg: string): any; }
-const failPickApple: FailPickApple = (errMsg: string) => ({
-    type: ActionEnum.FAIL_PICK_APPLE,
-    payload: new Error(errMsg),
-    error: true
-})
+const failPickApple: FailPickApple = createAction('FAIL_PICK_APPLE');
 
 export interface EatApple { (appleId: number): any; }
-const eatApple: EatApple = (appleId: number) => ({
-    type: ActionEnum.EAT_APPLE,
-    payload: appleId
-})
+const eatApple: EatApple = createAction('EAT_APPLE');
 
 export default {
     pickApple: pickApple,
