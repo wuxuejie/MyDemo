@@ -12,6 +12,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts-ts": "2.8.0",
     "redux": "^3.7.2",
+    "redux-form": "^7.2.0",
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
@@ -26,6 +27,7 @@
     "@types/react": "^16.0.31",
     "@types/react-dom": "^16.0.3",
     "@types/react-router-dom": "^4.2.3",
+    "@types/redux-form": "^7.0.10",
     "sass-loader": "^6.0.6"
   }
 }

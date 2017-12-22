@@ -6,7 +6,7 @@ import applepng from '../../images/apple.png';
 class AppleItem extends React.Component {
 
     shouldComponentUpdate(nextProps) {
-        return nextProps.state != this.props.state;
+        return nextProps.state !== this.props.state;
     }
 
     render() {

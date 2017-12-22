@@ -1,10 +1,16 @@
 
-import { Actions } from './actions';
+import { IndexActions, EatApple } from './actions';
 
-export interface Apple{
+export interface Apple {
     id: number,
     weight: number,
     isEaten: boolean
+}
+
+
+export interface FormData {
+    name: string;
+    age: number;
 }
 
 export interface AppleBasket {
@@ -13,11 +19,11 @@ export interface AppleBasket {
     apples: Apple[]
 };
 
-export interface IndexProps{
-    appleBasket:AppleBasket,
-    actions:Actions
+export interface IndexProps {
+    appleBasket: AppleBasket,
+    actions: IndexActions
 }
-export interface AppleItemProps{
-    eatApple:Actions["eatApple"],
-    apple:Apple
+export interface AppleItemProps {
+    eatApple: EatApple,
+    apple: Apple
 }

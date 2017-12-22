@@ -8,8 +8,10 @@ import thunk from 'redux-thunk';
 
 import './apps/styles/main.scss';
 
-import reducer from './apps/components/reducers';
+import reducer from './apps/AppReducers';
 import AppleBasket from './apps/routes/AppleBasket';
+import Register from './apps/routes/Register';
+import Demo from './apps/routes/Demo';
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
@@ -20,6 +22,8 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact={true} path="/" component={AppleBasket} />
+            <Route exact={true} path="/Demo" component={Demo} />
+            <Route exact={true} path="/Register" component={Register} />
           </Switch>
         </Router>
       </Provider>

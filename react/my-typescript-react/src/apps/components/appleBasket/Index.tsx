@@ -1,11 +1,9 @@
 import * as React from 'react';
 import AppleItem from './AppleItem';
+// import { Form, Field,InjectedFormProps } from 'redux-form'
 import { Apple, IndexProps } from './type';
 
 class AppleBusket extends React.Component<IndexProps> {
-    constructor(props: IndexProps) {
-        super(props);
-    }
     /**
      * 计算当前已吃和未吃苹果的状态.
      * @returns {Object} status.
@@ -79,7 +77,6 @@ class AppleBusket extends React.Component<IndexProps> {
                 <div className="appleList">
                     {this.getAppleItem(apples)}
                 </div>
-
                 <div className="btn-div">
                     <button className={isPicking ? 'disabled' : ''} onClick={actions.pickApple} >摘苹果</button>
                 </div>

@@ -2,15 +2,13 @@
 import { connect, Dispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import AppleBasket from '../components/appleBasket/Index';
-import actions, { Actions } from '../components/appleBasket/actions';
-import { StoreState } from '../types/index';
+import actions from '../components/appleBasket/actions';
+import { StoreState } from '../AppStore';
 
-const mapStateToProps = (state: StoreState) => ({
-    appleBasket: state.appleBasket
-});
+const mapStateToProps = (state: StoreState) => ({ appleBasket: state.appleBasket });
 
-const mapDispatchToProps = (dispatch: Dispatch<Actions>) => ({
+const mapDispatchToProps = (dispatch: Dispatch<any>) => ({
     actions: bindActionCreators(actions, dispatch)
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(AppleBasket);
+export default connect<{}, {}>(mapStateToProps, mapDispatchToProps)(AppleBasket);
