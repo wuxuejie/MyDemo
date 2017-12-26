@@ -13,7 +13,7 @@ const defaultState: AppleBasket = {
 
 export default handleActions<AppleBasket, { type: string, payload: any }>({
     BEGIN_PICK_APPLE: (state, action) => ({...state, isPicking: true }),
-    DONE_PICK_APPLE: (state, action) => {
+    DONE_PICK_APPLE: (state, action: { type: string, payload: any }) => {
         let newApple = {
             id: state.newAppleId,
             weight: action.payload,
@@ -31,35 +31,3 @@ export default handleActions<AppleBasket, { type: string, payload: any }>({
         return fromJS(state).toJS();
     },
 }, defaultState);
-
-// export default (state: AppleBasket = defaultState, action: { type: string, payload: any }) => {
-//     if (!state) return;
-
-//     switch (action.type) {
-//         case 'BEGIN_PICK_APPLE':
-//             state.isPicking = true;
-//             break;
-//         case 'DONE_PICK_APPLE':
-//             let newApple = {
-//                 id: state.newAppleId,
-//                 weight: action.payload,
-//                 isEaten: false
-//             };
-//             state.apples.push(newApple);
-//             state.newAppleId++;
-//             state.isPicking = false;
-//             break;
-//         case 'FAIL_PICK_APPLE':
-//             state.isPicking = false;
-//             break;
-
-//         case 'EAT_APPLE':
-//             let eatItem = <Apple>state.apples.find(p => p.id == action.payload);
-//             if (eatItem) eatItem.isEaten = true;
-//             break;
-
-//         default:
-//             return state;
-//     }
-//     return fromJS(state).toJS();
-// };

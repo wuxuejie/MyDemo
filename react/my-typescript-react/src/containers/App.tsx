@@ -6,12 +6,12 @@ import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 
-import './apps/styles/main.scss';
+import '../static/styles/main.scss';
 
-import reducer from './apps/AppReducers';
-import AppleBasket from './apps/routes/AppleBasket';
-import Register from './apps/routes/Register';
-import Demo from './apps/routes/Demo';
+import reducer from '../reducers';
+import AppleBasket from './appleBasket';
+import Register from './register';
+import Demo from '../apps/routes/Demo';
 
 const store = createStore(reducer, applyMiddleware(thunk));
 
