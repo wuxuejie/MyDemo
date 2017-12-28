@@ -1,5 +1,5 @@
 import { fromJS } from 'immutable';
-import { AppleBasket, Apple } from '../storeType/appleBasket';
+import { AppleBasket, Apple } from '../types/appleBasket';
 const initialState: AppleBasket = {
     pickingNumber: '初始化',
     isPicking: false,

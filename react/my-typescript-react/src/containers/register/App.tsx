@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Field, reduxForm } from 'redux-form'
-import { IndexProps } from '../../storeType/register'
+import { IndexProps } from '../../types/register'
 
 const SimpleForm = (props: IndexProps) => {
   const { handleSubmit, pristine, reset, submitting } = props

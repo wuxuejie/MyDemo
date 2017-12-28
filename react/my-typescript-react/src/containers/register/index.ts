@@ -2,7 +2,7 @@
 import { connect, Dispatch } from 'react-redux';
 import Register from './App';
 import { onSubmit } from '../../actions/appActions/register';
-import { StoreState } from '../../storeType';
+import { StoreState } from '../../types';
 
 const mapStateToProps = (state: StoreState) => ({
 });

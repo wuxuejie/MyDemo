@@ -1,5 +1,5 @@
 import { setTimeout } from "timers";
-import { FormData } from "../../storeType/register";
+import { FormData } from "../../types/register";
 
 export interface HandleSubmit { (values: FormData): any; }
 export const onSubmit: HandleSubmit = (values: FormData) => {

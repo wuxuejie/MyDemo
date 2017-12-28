@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AppleItemProps } from '../../storeType/appleBasket';
+import { AppleItemProps } from '../../types/appleBasket';
 
 const applepng = require('../../static/images/apple.png');
 

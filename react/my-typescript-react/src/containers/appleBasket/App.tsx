@@ -1,7 +1,7 @@
 import * as React from 'react';
 import AppleItem from './AppleItem';
 import LableInput from '../../components/form/LableInput';
-import { IndexProps, SampleFormData } from '../../storeType/appleBasket';
+import { IndexProps, SampleFormData } from '../../types/appleBasket';
 import { reduxForm } from 'redux-form';
 
 class AppleBusket extends React.Component<IndexProps> {

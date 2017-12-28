@@ -4,7 +4,7 @@ import { formValueSelector } from 'redux-form'
 import { bindActionCreators } from 'redux';
 import AppleBasket from './App';
 import actions from '../../actions/appActions/appleBasket';
-import { StoreState } from '../../storeType/index';
+import { StoreState } from '../../types/index';
 
 const mapStateToProps = (state: StoreState) => {
     var selector = formValueSelector('simple');
