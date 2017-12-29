@@ -1,6 +1,7 @@
 
-import { IndexActions, EatApple } from '../actions/appActions/appleBasket';
+
 import { InjectedFormProps } from 'redux-form'
+import { IndexActions, EatApple } from './actionType/appleBasketType';
 
 export interface Apple {
     id: number,
@@ -16,7 +17,7 @@ export interface FormData {
 export interface SampleFormData {
     pickingNumber: string
 }
-export interface AppleBasket {
+export interface AppleBasketProps {
     isPicking: boolean,
     newAppleId: number,
     notEatenQuantity: number,
@@ -27,7 +28,7 @@ export interface AppleBasket {
     pickingNumber: string
 };
 
-export interface IndexProps extends InjectedFormProps<SampleFormData>, AppleBasket {
+export interface IndexProps extends InjectedFormProps<SampleFormData>, AppleBasketProps {
     actions: IndexActions
 }
 export interface AppleItemProps {

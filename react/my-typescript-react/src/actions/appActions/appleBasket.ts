@@ -1,15 +1,9 @@
 import { createAction } from 'redux-actions';
+import { DonePickApple, FailPickApple, IndexActions } from '../../types/actionType/appleBasketType';
+import { EatApple } from '../../apps/components/appleBasket/actions';
+import { LessAction, AsynLessAction } from '../../types/actionType/baseType';
 
-export interface IndexActions {
-    pickApple: PickApple;
-    beginPickApple: BeginPickApple;
-    donePickApple: DonePickApple;
-    failPickApple: FailPickApple;
-    eatApple: EatApple;
-}
-
-interface PickApple { (): any; }
-const pickApple: PickApple = () => {
+const pickApple: AsynLessAction = () => {
     return function (dispatch: any, getState: any) {
         if (getState().appleBasket.isPicking) {
             return;
@@ -31,16 +25,12 @@ const pickApple: PickApple = () => {
     }
 }
 
-interface BeginPickApple { (): any; }
-const beginPickApple: BeginPickApple = createAction('apple/BEGIN_PICK_APPLE');
+const beginPickApple: LessAction = createAction('apple/BEGIN_PICK_APPLE');
 
-interface DonePickApple { (appleWeight: number): any; }
 const donePickApple: DonePickApple = createAction('apple/DONE_PICK_APPLE');
 
-interface FailPickApple { (errMsg: string): any; }
 const failPickApple: FailPickApple = createAction('apple/FAIL_PICK_APPLE');
 
-export interface EatApple { (appleId: number): any; }
 const eatApple: EatApple = createAction('apple/EAT_APPLE');
 
 let indexActions: IndexActions;

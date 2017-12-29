@@ -1,6 +1,6 @@
 import { fromJS } from 'immutable';
-import { AppleBasket, Apple } from '../types/appleBasket';
-const initialState: AppleBasket = {
+import { AppleBasketProps, Apple } from '../types/appleBasket';
+const initialState: AppleBasketProps = {
     pickingNumber: '初始化',
     isPicking: false,
     newAppleId: 0,
@@ -10,6 +10,7 @@ const initialState: AppleBasket = {
     EatenWeight: 0,
     apples: []
 };
+
 export default (state: any = initialState, action: { type: string, payload: any }) => {
   
     switch (action.type) {
@@ -49,24 +50,3 @@ export default (state: any = initialState, action: { type: string, payload: any 
     }
     return fromJS(state).toJS();
 };
-
-// export default handleActions<AppleBasket, { type: string, payload: any }>({
-//     BEGIN_PICK_APPLE: (state, action) => ({ ...state, isPicking: true }),
-//     DONE_PICK_APPLE: (state, action: { type: string, payload: any }) => {
-//         let newApple = {
-//             id: state.newAppleId,
-//             weight: action.payload,
-//             isEaten: false
-//         };
-//         state.apples.push(newApple);
-//         state.newAppleId++;
-//         state.isPicking = false;
-//         return fromJS(state).toJS();
-//     },
-//     FAIL_PICK_APPLE: (state: any, action: any) => ({ ...state, isPicking: false }),
-//     EAT_APPLE: (state: any, action: any) => {
-//         let eatItem = <Apple>state.apples.find((p: Apple) => p.id == action.payload);
-//         if (eatItem) eatItem.isEaten = true;
-//         return fromJS(state).toJS();
-//     },
-// }, defaultState);

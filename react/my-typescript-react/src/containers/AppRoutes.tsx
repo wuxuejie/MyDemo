@@ -19,19 +19,3 @@ export default class AppRoutes extends React.Component {
         );
     }
 }
-
-// interface AppRoutes extends Array<{
-//     path: string,
-//     component: any,
-//     exact: boolean
-// }> {}
-
-// let appRoutes: AppRoutes;
-
-// appRoutes = [
-//     { path: './', component: Home, exact: true },
-//     { path: './AppleBasket', component: AppleBasket, exact: true },
-//     { path: './Demo', component: Demo, exact: true },
-//     { path: './Register', component: Register, exact: true },
-// ]
-// export default appRoutes;
