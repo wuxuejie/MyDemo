@@ -1,14 +1,23 @@
 
 import { connect, Dispatch } from 'react-redux';
-import Register from './App';
-import { onSubmit } from '../../actions/appActions/register';
+import Register from './ReactReduxForm';
 import { StoreState } from '../../types';
+// import { FormData } from '../../types/register';
+import { bindActionCreators } from 'redux';
+import actions from '../../actions/appActions/register';
 
-const mapStateToProps = (state: StoreState) => ({
+const mapStateToProps = (state: StoreState) => {
+    return state;
+};
+
+const mapDispatchToProps = (dispatch: Dispatch<string>) => ({
+    // actions: {
+    //     HandleSubmit: (values: FormData) => {
+    //         console.log(values.name);
+    //         //==dispatch()
+    //     }
+    // }
+    actions: bindActionCreators(actions, dispatch)
 });
 
-const mapDispatchToProps = (dispatch: Dispatch<any>) => ({
-    onSubmit: onSubmit
-});
-
-export default connect<{}, {}>(mapStateToProps, mapDispatchToProps)(Register);
+export default connect<{}>(mapStateToProps, mapDispatchToProps)(Register);

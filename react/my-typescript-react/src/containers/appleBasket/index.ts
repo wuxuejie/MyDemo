@@ -1,6 +1,6 @@
 
 import { connect, Dispatch } from 'react-redux';
-import { formValueSelector } from 'redux-form'
+import { formValueSelector } from 'redux-form';
 import { bindActionCreators } from 'redux';
 import AppleBasket from './App';
 import actions from '../../actions/appActions/appleBasket';

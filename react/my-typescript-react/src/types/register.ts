@@ -1,18 +1,9 @@
-
-import { InjectedFormProps } from 'redux-form'
-
-
-export enum ActionEnum {
-    BeginSubmit = 1,
-    FailSubmit,
-    SuccessSubmit,
-    Reset
-}
+import { IndexActions } from './actionType/registerType';
 
 export interface FormData {
-    firstName: string
+    name: string;
+    age: number;
 }
-
-export interface IndexProps extends InjectedFormProps<{}> {
-    firstName: string
+export interface IndexProps {
+    actions: IndexActions;
 }

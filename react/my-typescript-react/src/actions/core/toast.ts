@@ -1,27 +1,27 @@
 
-interface IToast {
-    msg(msg: string): Promise<any>
-    warning(msg: string): Promise<any>
-    error(msg: string): Promise<any>
+interface Toast {
+    msg(msg: string): Promise<{}>;
+    warning(msg: string): Promise<{}>;
+    error(msg: string): Promise<{}>;
 }
-class toast implements IToast {
-    msg(msg: string): Promise<any> {
+class ToastImp implements Toast {
+    msg(msg: string): Promise<{}> {
         alert(msg);
         return new Promise((resolve, reject) => {
             resolve();
-        })
+        });
     }
-    warning(msg: string): Promise<any> {
+    warning(msg: string): Promise<{}> {
         alert(msg);
         return new Promise((resolve, reject) => {
             resolve();
-        })
+        });
     }
-    error(msg: string): Promise<any> {
+    error(msg: string): Promise<{}> {
         alert(msg);
         return new Promise((resolve, reject) => {
             resolve();
-        })
+        });
     }
 }
-export default new toast();
+export default new ToastImp();

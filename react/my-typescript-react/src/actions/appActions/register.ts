@@ -1,12 +1,14 @@
-import { setTimeout } from "timers";
-import { FormData } from "../../types/register";
+import { FormData } from '../../types/register';
+import { HandleSubmit } from '../../types/actionType/registerType';
+// import { AsynLessAction } from '../../types/actionType/baseType';
 
-export interface HandleSubmit { (values: FormData): any; }
 export const onSubmit: HandleSubmit = (values: FormData) => {
-    return new Promise(function (resolve, reject) {
-        setTimeout(() => {
-            values.firstName = 'hello '+values.firstName
-            resolve(values);
-        }, 2000);
-    });
-}
+    // tslint:disable-next-line:no-console
+    console.log(values.name);
+};
+export default {
+    HandleSubmit: (values: FormData) => {
+        // tslint:disable-next-line:no-console
+        console.log(values.name);
+    }
+};

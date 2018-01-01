@@ -11,6 +11,7 @@ const initialState: AppleBasketProps = {
     apples: []
 };
 
+// tslint:disable-next-line:no-any
 export default (state: any = initialState, action: { type: string, payload: any }) => {
   
     switch (action.type) {
